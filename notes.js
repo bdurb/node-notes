@@ -12,12 +12,13 @@ const getNote = (title) => {
 
 };
 
-const removeNote = () => {
+const removeNote = (title) => {
 
 };
 
 module.exports = {
   addNote,
   getAll,
-  getNote
+  getNote,
+  removeNote
 }
