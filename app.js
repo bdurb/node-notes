@@ -2,18 +2,21 @@ console.log('starting app.')
 
 const fs = require('fs');
 const _ = require('lodash');
+const yargs = require('yargs');
 
-const commant = process.argv[2];
 const notes = require('./notes');
 
+const argv = yargs.argv;
+const command = process.argv[2];
+
 if (commant === 'add') {
-  console.log('Adding new Note')
+  notes.addNote(argv.title, argv.body);
 } else if (commant === 'list') {
-  console.log('listing all notes');
+  notes.getAll();
 } else if (command === 'read') {
-  console.log('Reading note');
+  notes.getNote(argv.title);
 } else if (command === 'remove') {
-  console.log('Removing note');
+  notes.removeNote();
 } else {
   console.log('command not recgonized');
 }
