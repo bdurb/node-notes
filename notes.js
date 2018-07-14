@@ -33,7 +33,7 @@ const addNote = (title, body ) => {
 };
 
 const getAll = () => {
-
+  return fetchNotes();
 };
 
 const getNote = (title) => {
