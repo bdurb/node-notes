@@ -1,6 +1,6 @@
 console.log('starting notes');
 
-const fs = require('fs');
+var fs = require('fs');
 
 const addNote = (title, body ) => {
   const notes = [];
