@@ -9,9 +9,9 @@ const notes = require('./notes');
 const argv = yargs.argv;
 const command = argv_[0];
 
-if (commant === 'add') {
+if (command === 'add') {
   notes.addNote(argv.title, argv.body);
-} else if (commant === 'list') {
+} else if (command === 'list') {
   notes.getAll();
 } else if (command === 'read') {
   notes.getNote(argv.title);
