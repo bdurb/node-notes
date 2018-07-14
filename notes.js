@@ -1,4 +1,4 @@
-console.log('starting notes');
+
 
 var fs = require('fs');
 
